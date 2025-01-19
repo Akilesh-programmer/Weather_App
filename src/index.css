@@ -1,0 +1,106 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    gap: 15px;
+}
+
+form input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: 3px solid #80bdff;
+    outline-offset: 2px;
+}
+
+.weather {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.weather h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+.weather .city {
+    color: #007bff;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: capitalize; 
+}
+
+.weather p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+}
+
+.weather strong {
+    color: #007bff;
+}
+
+.weather span {
+    font-weight: bold;
+    color: #333;
+}
+
+.weatherDetails {
+    display: grid;
+    grid-template-columns: auto 10px 1fr;
+    gap: 10px;
+    font-size: 16px;
+    color: #555;
+    align-items: center;
+}
+
+.weatherDetails strong {
+    color: #007bff;
+    text-align: left;
+}
+
+.weatherDetails span{
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+}
+
+.weatherDetails .semiColon {
+    text-align: center;
+    color: #333;
+}

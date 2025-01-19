@@ -68,15 +68,24 @@ const Weather = () => {
                 <button type="submit">Get Weather</button>
             </form>
             <br />
-            <p>Current Temperature: {weatherDetails.currentTemp}</p><br />
-            <p>Feels Like: {weatherDetails.feelsLike}</p><br />
-            <p>Maximum Temperature: {weatherDetails.maxTemp}</p><br />
-            <p>Minimum Temperature: {weatherDetails.minTemp}</p><br />
-            <p>Humidity: {weatherDetails.humidity}</p><br />
-            <p>Pressure: {weatherDetails.pressure}</p><br />
-            <p>Weather Description: {weatherDetails.weatherDescription}</p><br />
-            <p>Wind Degree: {weatherDetails.windDeg}</p><br />
-            <p>Wind Speed: {weatherDetails.windSpeed}</p><br />
+
+            <div className="weather">
+                <h2>Weather for <span className="city">{city}</span></h2>
+
+                <div className="weatherDetails">
+                    <strong>Feels Like</strong> <div className="semiColon">:</div> <span>{weatherDetails.feelsLike}</span>
+                    <strong>Current Temperature</strong> <div className="semiColon">:</div> <span>{weatherDetails.currentTemp}</span>
+                    <strong>Maximum Temperature</strong> <div className="semiColon">:</div> <span>{weatherDetails.maxTemp}</span>
+                    <strong>Minimum Temperature</strong> <div className="semiColon">:</div> <span>{weatherDetails.minTemp}</span>
+                    <strong>Humidity</strong> <div className="semiColon">:</div> <span>{weatherDetails.humidity}</span>
+                    <strong>Pressure</strong> <div className="semiColon">:</div> <span>{weatherDetails.pressure}</span>
+                    <strong>Weather Description</strong> <div className="semiColon">:</div> <span>{weatherDetails.weatherDescription}</span>
+                    <strong>Wind Degree</strong> <div className="semiColon">:</div> <span>{weatherDetails.windDeg}</span>
+                    <strong>Wind Speed</strong> <div className="semiColon">:</div> <span>{weatherDetails.windSpeed}</span>
+                </div>
+                
+            </div>
+            
         </>
         
     )
